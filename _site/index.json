@@ -1,0 +1,22 @@
+{
+  "api/lavender.html": {
+    "href": "api/lavender.html",
+    "title": "Lavender | Lavender Docs",
+    "summary": "Lavender"
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | Lavender Docs",
+    "summary": "Getting Started"
+  },
+  "docs/lavender.html": {
+    "href": "docs/lavender.html",
+    "title": "Lavender Class | Lavender Docs",
+    "summary": "Lavender Class Definition Namespace: Lavender Source: Lavender.cs Lavenders \"Main\" Class, you will use it pretty often. Properties isInitialized harmony lastLoadedScene The build index of the last scene during the \"SceneManager.sceneLoaded\" callback LoadingDone You want to execute your mod logic only when LoadingDone = true to make sure that all game logic is already initialized! Static Properties instance Provides the current Lavender instance createdFurniture A list of all modded Furnitures using Lavender. customItemDatabase A list of all modded items using Lavender. customRecipeDatabase A list of all modded Recipes using Lavender. Methods GetFurnitureByTitel(string) AddFurnitureHandlers(Type) Gets all FurnitureHandler methods defined in the given Type: type and registers them for the Handler callback AddFurnitureShopRestockHandlers(Type) Gets all FurnitureShopRestockHandler methods defined in the given Type: type and registers them for the Handler callback AddCustomItem(Item, string) AddCustomItemsFromJson(string, string) AddCustomRecipe(Recipe, string) AddCustomRecipesFromJson(string, string)"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "| Lavender Docs",
+    "summary": "Lavender is a powerful and user-friendly library mod designed to simplify the process of modding the game Obenseuer using BepInEx as mod loader. Contributing Contributions are welcome! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated. To contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change. Here are some basic resources on code style and naming conventions Lavender trys to fulfill: Coding Conventions Identifier Names Repositories: Lavender - The library code! Lavender Docs - Documentation Repo & this GitHub Page License This project is licensed under the LGPL-v2.1 license"
+  }
+}
