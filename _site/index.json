@@ -4,6 +4,36 @@
     "title": "Lavender | Lavender Docs",
     "summary": "Lavender"
   },
+  "docs/CommandLib/CommandManager.html": {
+    "href": "docs/CommandLib/CommandManager.html",
+    "title": "CommandManager Static Class | Lavender Docs",
+    "summary": "CommandManager Static Class Definition Namespace: Lavender.CommandLib Source: CommandManager.cs Remarks The CommandManager gives you the ability to add custom commands to the developer console using IConsoleCommand as command handler. Methods RegisterCommand(IConsoleCommand) Register an IConsoleCommand with the handler PrintToDevConsole(object) Prints a message to the dev console"
+  },
+  "docs/CommandLib/IConsoleCommand.html": {
+    "href": "docs/CommandLib/IConsoleCommand.html",
+    "title": "IConsoleCommand Interface | Lavender Docs",
+    "summary": "IConsoleCommand Interface Definition Namespace: Lavender.CommandLib Source: IConsoleCommand.cs Examples Creating a custom command: using Lavender.CommandLib; public class EchoCommand : IConsoleCommand { public string Name => \"echo\"; public string Description => \"echoes whatever you tell it to\"; public string Usage => \"echo <string>\"; public void Execute(params string[] args) { if (args.Length < 2) { CommandManager.PrintToDevConsole(Usage); return; } //Specifically call string.Trim(char[]) instead of //string.Trim(char) to avoid a netstandard 2.0 -> 2.1 //issue CommandManager.PrintToDevConsole(args[1].Trim(['\"'])); } } Register the command: CommandManager.RegisterCommand(new EchoCommand()); Put this in ur plugin innit code; e.g., In your BaseUnityPlugin class in Awake() Properties Name The name of the console command, (e.g., \"give\"). Description The description of the console command (e.g., \"Gives the player an item\"). Usage A short explanation on how to use the console command (e.g., \"give [item_name]\"). Methods Execute(params string[]) A function to be executed when the console command is run."
+  },
+  "docs/FurnitureLib/FurnitureAssetData.html": {
+    "href": "docs/FurnitureLib/FurnitureAssetData.html",
+    "title": "FurnitureAssetData Class | Lavender Docs",
+    "summary": "FurnitureAssetData Class"
+  },
+  "docs/FurnitureLib/FurnitureConfig.html": {
+    "href": "docs/FurnitureLib/FurnitureConfig.html",
+    "title": "FurnitureConfig Class | Lavender Docs",
+    "summary": "FurnitureConfig Class"
+  },
+  "docs/FurnitureLib/FurnitureCreator.html": {
+    "href": "docs/FurnitureLib/FurnitureCreator.html",
+    "title": "FurnitureCreator Class | Lavender Docs",
+    "summary": "FurnitureCreator Class"
+  },
+  "docs/FurnitureLib/HandlerAttributes.html": {
+    "href": "docs/FurnitureLib/HandlerAttributes.html",
+    "title": "HandlerAttributes (FurnitureLib) | Lavender Docs",
+    "summary": "HandlerAttributes (FurnitureLib)"
+  },
   "docs/getting-started.html": {
     "href": "docs/getting-started.html",
     "title": "Getting Started | Lavender Docs",
@@ -12,11 +42,16 @@
   "docs/lavender.html": {
     "href": "docs/lavender.html",
     "title": "Lavender Class | Lavender Docs",
-    "summary": "Lavender Class Definition Namespace: Lavender Source: Lavender.cs Lavenders \"Main\" Class, you will use it pretty often. Properties isInitialized harmony lastLoadedScene The build index of the last scene during the \"SceneManager.sceneLoaded\" callback LoadingDone You want to execute your mod logic only when LoadingDone = true to make sure that all game logic is already initialized! Static Properties instance Provides the current Lavender instance createdFurniture A list of all modded Furnitures using Lavender. customItemDatabase A list of all modded items using Lavender. customRecipeDatabase A list of all modded Recipes using Lavender. Methods GetFurnitureByTitel(string) AddFurnitureHandlers(Type) Gets all FurnitureHandler methods defined in the given Type: type and registers them for the Handler callback AddFurnitureShopRestockHandlers(Type) Gets all FurnitureShopRestockHandler methods defined in the given Type: type and registers them for the Handler callback AddCustomItem(Item, string) AddCustomItemsFromJson(string, string) AddCustomRecipe(Recipe, string) AddCustomRecipesFromJson(string, string)"
+    "summary": "Lavender Class Definition Namespace: Lavender Source: Lavender.cs Lavenders \"Main\" Class, you will use it pretty often. Properties isInitialized harmony lastLoadedScene The build index of the last scene during the \"SceneManager.sceneLoaded\" callback LoadingDone You want to execute your mod logic only when LoadingDone = true to make sure that all game logic is already initialized! Static Properties instance Provides the current Lavender instance createdFurniture A list of all modded furniture's using Lavender. customItemDatabase A list of all modded items using Lavender. customRecipeDatabase A list of all modded Recipes using Lavender. Methods GetFurnitureByTitel(string) AddFurnitureHandlers(Type) Gets all FurnitureHandler methods defined in the given Type: type and registers them for the Handler callback AddFurnitureShopRestockHandlers(Type) Gets all FurnitureShopRestockHandler methods defined in the given Type: type and registers them for the Handler callback AddCustomItem(Item, string) AddCustomItemsFromJson(string, string) AddCustomRecipe(Recipe, string) AddCustomRecipesFromJson(string, string)"
   },
   "index.html": {
     "href": "index.html",
     "title": "| Lavender Docs",
-    "summary": "Lavender is a powerful and user-friendly library mod designed to simplify the process of modding the game Obenseuer using BepInEx as mod loader. Contributing Contributions are welcome! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated. To contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change. Here are some basic resources on code style and naming conventions Lavender trys to fulfill: Coding Conventions Identifier Names Repositories: Lavender - The library code! Lavender Docs - Documentation Repo & this GitHub Page License This project is licensed under the LGPL-v2.1 license"
+    "summary": "Lavender is a powerful and user-friendly library mod designed to simplify the process of modding the game Obenseuer using BepInEx as mod loader. Contributing Contributions are welcome! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated. To contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change. Here are some basic resources on code style and naming conventions Lavender try's to fulfill: Coding Conventions Identifier Names Repositories: Lavender - The library code! Lavender Docs - Documentation Repo & this GitHub Page License This project is licensed under the LGPL-v2.1 license"
+  },
+  "template/class.html": {
+    "href": "template/class.html",
+    "title": "TYPE Class | Lavender Docs",
+    "summary": "TYPE Class Definition Namespace: Source: Type.cs Remarks Constructors func(object, string) Description Properties Property Description Static Properties Property Description Methods func(object, string) Description"
   }
 }

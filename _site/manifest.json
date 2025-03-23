@@ -35,6 +35,66 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/CommandLib/CommandManager.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/CommandLib/CommandManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/CommandLib/IConsoleCommand.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/CommandLib/IConsoleCommand.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/FurnitureLib/FurnitureAssetData.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/FurnitureLib/FurnitureAssetData.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/FurnitureLib/FurnitureConfig.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/FurnitureLib/FurnitureConfig.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/FurnitureLib/FurnitureCreator.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/FurnitureLib/FurnitureCreator.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/FurnitureLib/HandlerAttributes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/FurnitureLib/HandlerAttributes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
         ".html": {
@@ -82,6 +142,16 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "template/class.md",
+      "output": {
+        ".html": {
+          "relative_path": "template/class.html"
         }
       },
       "version": ""

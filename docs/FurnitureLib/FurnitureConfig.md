@@ -1,0 +1,1 @@
+# FurnitureConfig Class

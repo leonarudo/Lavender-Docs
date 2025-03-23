@@ -1,0 +1,1 @@
+# FurnitureAssetData Class

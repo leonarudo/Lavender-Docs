@@ -13,7 +13,7 @@
 ## Contributing
 Contributions are welcome! Whether you're fixing bugs, adding new features, or improving documentation, your help is appreciated. To contribute, please fork the repository and submit a pull request. For major changes, please open an issue first to discuss what you would like to change.
 
-Here are some basic resources on code style and naming conventions Lavender trys to fulfill:
+Here are some basic resources on code style and naming conventions Lavender try's to fulfill:
 - [Coding Conventions](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions)
 - [Identifier Names](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/identifier-names)
 

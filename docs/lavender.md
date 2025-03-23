@@ -40,7 +40,7 @@ Lavenders "Main" Class, you will use it pretty often.
 </tr>
 <tr>
     <td>createdFurniture</td>
-    <td>A list of all modded Furnitures using Lavender.</td>
+    <td>A list of all modded furniture's using Lavender.</td>
 </tr>
 <tr>
     <td>customItemDatabase</td>

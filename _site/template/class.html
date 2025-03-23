@@ -2,21 +2,21 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Lavender Class | Lavender Docs </title>
+      <title>TYPE Class | Lavender Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Lavender Class | Lavender Docs ">
+      <meta name="title" content="TYPE Class | Lavender Docs ">
       
       
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
       <meta name="docfx:navrel" content="../toc.html">
-      <meta name="docfx:tocrel" content="toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
       
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/leonarudo/Lavender-Docs/blob/main/docs/lavender.md/#L1">
+      <meta name="docfx:docurl" content="https://github.com/leonarudo/Lavender-Docs/blob/main/template/class.md/#L1">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -63,112 +63,60 @@
     </header>
 
     <main class="container-xxl">
-      <div class="toc-offcanvas">
-        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <nav class="toc" id="toc"></nav>
-          </div>
-        </div>
-      </div>
 
       <div class="content">
         <div class="actionbar">
-          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
-            <i class="bi bi-list"></i>
-          </button>
 
           <nav id="breadcrumb"></nav>
         </div>
 
         <article data-uid="">
-<h1 id="lavender-class">Lavender Class</h1>
+<h1 id="type-class">TYPE Class</h1>
 
 <br>
 <h2 id="definition">Definition</h2>
-<p>Namespace: Lavender <br>
-Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/Lavender.cs">Lavender.cs</a></p>
-<p>Lavenders &quot;Main&quot; Class, you will use it pretty often.</p>
+<p>Namespace:  <br>
+Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/.cs">Type.cs</a></p>
+<br>
+<h2 id="remarks">Remarks</h2>
+<br>
+<h2 id="constructors">Constructors</h2>
+<table>
+<tr>
+    <td>func(object, string)</td>
+    <td>Description</td>
+</tr>
+</table>
 <br>
 <h2 id="properties">Properties</h2>
 <table>
 <tr>
-    <td>isInitialized</td>
-    <td></td>
-</tr>
-<tr>
-    <td>harmony</td>
-    <td></td>
-</tr>
-<tr>
-    <td>lastLoadedScene</td>
-    <td>The build index of the last scene during the "SceneManager.sceneLoaded" callback</td>
-</tr>
-<tr>
-    <td>LoadingDone</td>
-    <td>You want to execute your mod logic only when LoadingDone = true to make sure that all game logic is already initialized!</td>
+    <td>Property</td>
+    <td>Description</td>
 </tr>
 </table>
 <br>
 <h2 id="static-properties">Static Properties</h2>
 <table>
 <tr>
-    <td>instance</td>
-    <td>Provides the current Lavender instance</td>
-</tr>
-<tr>
-    <td>createdFurniture</td>
-    <td>A list of all modded furniture's using Lavender.</td>
-</tr>
-<tr>
-    <td>customItemDatabase</td>
-    <td>A list of all modded items using Lavender.</td>
-</tr>
-<tr>
-    <td>customRecipeDatabase</td>
-    <td>A list of all modded Recipes using Lavender.</td>
+    <td>Property</td>
+    <td>Description</td>
 </tr>
 </table>
 <br>
 <h2 id="methods">Methods</h2>
 <table>
 <tr>
-    <td>GetFurnitureByTitel(string)</td>
-    <td></td>
-</tr>
-<tr>
-    <td>AddFurnitureHandlers(Type)</td>
-    <td>Gets all FurnitureHandler methods defined in the given Type: type and registers them for the Handler callback</td>
-</tr>
-<tr>
-    <td>AddFurnitureShopRestockHandlers(Type)</td>
-    <td>Gets all FurnitureShopRestockHandler methods defined in the given Type: type and registers them for the Handler callback</td>
-</tr>
-<tr>
-    <td>AddCustomItem(Item, string)</td>
-    <td></td>
-</tr>
-<tr>
-    <td>AddCustomItemsFromJson(string, string)</td>
-    <td></td>
-</tr>
-<tr>
-    <td>AddCustomRecipe(Recipe, string)</td>
-    <td></td>
-</tr>
-<tr>
-    <td>AddCustomRecipesFromJson(string, string)</td>
-    <td></td>
+    <td>func(object, string)</td>
+    <td>Description</td>
 </tr>
 </table>
+<br>
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/leonarudo/Lavender-Docs/blob/main/docs/lavender.md/#L1" class="edit-link">Edit this page</a>
+          <a href="https://github.com/leonarudo/Lavender-Docs/blob/main/template/class.md/#L1" class="edit-link">Edit this page</a>
         </div>
 
         <div class="next-article d-print-none border-top" id="nextArticle"></div>
