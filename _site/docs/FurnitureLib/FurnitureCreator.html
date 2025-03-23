@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>FurnitureCreator Class | Lavender Docs </title>
+      <title>FurnitureCreator &quot;Static&quot; Class | Lavender Docs </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="FurnitureCreator Class | Lavender Docs ">
+      <meta name="title" content="FurnitureCreator &quot;Static&quot; Class | Lavender Docs ">
       
       
       <link rel="icon" href="../../favicon.ico">
@@ -85,8 +85,42 @@
         </div>
 
         <article data-uid="">
-<h1 id="furniturecreator-class">FurnitureCreator Class</h1>
+<h1 id="furniturecreator-static-class">FurnitureCreator &quot;Static&quot; Class</h1>
 
+<br>
+<h2 id="definition">Definition</h2>
+<p>Namespace: Lavender.FurnitureLib <br>
+Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/FurnitureLib/FurnitureCreator.cs">FurnitureCreator.cs</a></p>
+<br>
+<h2 id="remarks">Remarks</h2>
+<p>The FurnitureCreator allows you to create furniture's either from an FurnitureConfig json or directly by setting the right parameters in <code>FurnitureCreator.NewFurniture(...)</code>
+<em>(if you know what your doing xD)</em></p>
+<p>If you just want to create some furniture's stick to <code>Create(...)</code> and <code>CreateShopFurniture(...)</code>.
+<br></p>
+<h2 id="methods">Methods</h2>
+<table>
+<tr>
+    <td>NewFurniture(string, string, Sprite, string, Furniture.Category, int, int, GameObject, GameObject, Furniture.BuildingArea[], List<furniture.reseourceitem>, FurniturePlaceType, Furniture.DisplayStyle, int)</furniture.reseourceitem></td>
+    <td>Creates an Furniture object and setups the prefab entity structure. *This function is for those who know what there doing!*</td>
+</tr>
+<tr>
+    <td>FurnitureConfigToFurniture(FurnitureConfig)</td>
+    <td>Uses a FurnitureConfig to create a Furniture</td>
+</tr>
+<tr>
+    <td>Create(string)</td>
+    <td>Creates a Furniture from the given path to the FurnitureConfig json and adds it to the 'createdFurniture' list</td>
+</tr>
+<tr>
+    <td>CreateShopFurniture(string, int)</td>
+    <td>Creates an BuildingSystem.FurnitureInfo for the FurnitureShopRestockHandler</td>
+</tr>
+<tr>
+    <td>CreateShopFurniture(int, string)</td>
+    <td>Creates an BuildingSystem.FurnitureInfo for the FurnitureShopRestockHandler</td>
+</tr>
+</table>
+<br>
 
 </article>
 

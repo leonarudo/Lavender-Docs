@@ -87,6 +87,165 @@
         <article data-uid="">
 <h1 id="furnitureconfig-class">FurnitureConfig Class</h1>
 
+<br>
+<h2 id="definition">Definition</h2>
+<p>Namespace: Lavender.FurnitureLib <br>
+Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/FurnitureLib/FurnitureConfig.cs">FurnitureConfig.cs</a></p>
+<br>
+<h2 id="example">Example</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Lavender supports loading images and obj's at runtime, but the obj importer is currently pretty buggy. For the best and more stable results use AssetBundle imports instead!</p>
+</div>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you are using an FurnitureAssetData.json instead of an AssetBundle, set the values for <code>imageName</code>, <code>prefabName</code> and <code>previewPrefabName</code> to <code>&quot;&quot;</code>!</p>
+</div>
+<h3 id="furnitureconfigjson">FurnitureConfig.json</h3>
+<pre><code class="lang-json">{
+    &quot;id&quot;: 0,
+	&quot;title&quot;: &quot;Name&quot;,
+	&quot;details&quot;:&quot;Description&quot;,
+
+	&quot;priceOC&quot;: 0,
+	&quot;priceRM&quot;: 0,
+
+	&quot;assetBundlePath&quot;: &quot;assetBundle&quot;,
+	&quot;imageName&quot;:&quot;asset_img&quot;,
+	&quot;prefabName&quot;:&quot;asset_pre&quot;,
+	&quot;previewPrefabName&quot;:&quot;asset_prepre&quot;,
+	
+	&quot;category&quot;: &quot;ALL&quot;,
+	&quot;restrictedAreas&quot;: [
+	],
+	
+	&quot;displayStyle&quot;: &quot;Default&quot;,
+    &quot;placeType&quot;: &quot;all&quot;,
+	&quot;displayRotationY&quot;: 0
+}
+</code></pre>
+<br>
+<h2 id="properties">Properties</h2>
+<table>
+<tr>
+    <td>id</td>
+    <td>Furniture ID</td>
+</tr>
+<tr>
+    <td>title</td>
+    <td>The name of the furniture</td>
+</tr>
+<tr>
+    <td>details</td>
+    <td>A short description of the furniture</td>
+</tr>
+<tr>
+    <td>priceOC</td>
+    <td>OC price</td>
+</tr>
+<tr>
+    <td>priceRM</td>
+    <td>RM price</td>
+</tr>
+<tr>
+    <td>assetBundlePath</td>
+    <td>The location of the AssetBundle, which contains the image,prefab and preview prefab, relative to the .json path
+    <br>Or the location of the FurnitureAssetData .json</td>
+</tr>
+<tr>
+    <td>imageName</td>
+    <td>The name of the sprite in the AssetBundle defined at assetBundlePath</td>
+</tr>
+<tr>
+    <td>prefabName</td>
+    <td>The name of the GameObject/Prefab in the AssetBundle defined at assetBundlePath</td>
+</tr>
+<tr>
+    <td>previewPrefabName</td>
+    <td>The name of the GameObject/Prefab in the AssetBundle defined at assetBundlePath</td>
+</tr>
+<tr>
+    <td>category</td>
+    <td>The category of the Furniture</td>
+</tr>
+<tr>
+    <td>restrictedAreas</td>
+    <td>Restricted areas to build the furniture -> Allowed to put everywhere if empty</td>
+</tr>
+<tr>
+    <td>displayStyle</td>
+    <td>Should it be positioned like a normal furniture or like a painting or ceiling object?</td>
+</tr>
+<tr>
+    <td>placeType</td>
+    <td>Restricted places to build (wall, floor, etc)</td>
+</tr>
+<tr>
+    <td>displayRotationY</td>
+    <td>Display rotation on the Y-Aches</td>
+</tr>
+</table>
+<br>
+<hr>
+<h1 id="furniture-config-enums">Furniture Config Enums</h1>
+<br>
+<h2 id="furniturecategory">FurnitureCategory</h2>
+<ul>
+<li>All</li>
+<li>Chairs</li>
+<li>Tables</li>
+<li>Electronics</li>
+<li>Paintings</li>
+<li>Lights</li>
+<li>Rugs</li>
+<li>Items</li>
+<li>Machines</li>
+<li>Storage</li>
+<li>Clutter</li>
+<li>Beds</li>
+<li>Sofas</li>
+<li>Decoration</li>
+<li>Plants</li>
+<li>Shelves</li>
+<li>Manufacturing</li>
+<li>Growing</li>
+<li>Letters</li>
+<li>Bathroom</li>
+<li>Signs</li>
+<li>Magazines</li>
+<li>Posters</li>
+<li>Curtains</li>
+<li>Flags</li>
+<li>LicensePlates</li>
+<li>Kitchen</li>
+<li>Tank</li>
+</ul>
+<br>
+<h2 id="furnituredisplaystyle">FurnitureDisplayStyle</h2>
+<ul>
+<li>Default</li>
+<li>Painting</li>
+<li>Ceiling</li>
+</ul>
+<br>
+<h2 id="furniturebuildingarea">FurnitureBuildingArea</h2>
+<ul>
+<li>None</li>
+<li>Stairs</li>
+<li>PlayerApartment</li>
+<li>Workshop</li>
+<li>Outside</li>
+<li>Greenhouse</li>
+</ul>
+<br>
+<h2 id="furnitureplacetype">FurniturePlaceType</h2>
+<ul>
+<li>all</li>
+<li>floor</li>
+<li>wall</li>
+<li>ceiling</li>
+<li>floorAndWall</li>
+</ul>
 
 </article>
 

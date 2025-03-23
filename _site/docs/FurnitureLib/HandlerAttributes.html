@@ -87,6 +87,123 @@
         <article data-uid="">
 <h1 id="handlerattributes-furniturelib">HandlerAttributes (FurnitureLib)</h1>
 
+<p>Namespace: Lavender.FurnitureLib <br>
+Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/FurnitureLib/HandlerAttributes.cs">HandlerAttributes.cs</a></p>
+<br>
+<h1 id="furniturehandlerattribute">FurnitureHandlerAttribute</h1>
+<p>The Furniture Handler Attribute allows you to add custom scripts to your furniture prefab!</p>
+<p>The Handler will always be called every time your furniture gets loaded in <code>SavableScriptableObject.LoadFromPath()</code>.
+Scripts added to your prefabs directly in the furniture creation or AssetBundle are likely causing errors, so always add your scripts using this handler!</p>
+<br>
+<h2 id="example">Example</h2>
+<pre><code class="lang-cs">using Lavender.FurnitureLib;
+
+// This Handler function gets called every time your furniture gets loaded!
+[FurnitureHandler(&quot;YourFurnitureTitle&quot;)]
+public static Furniture YourFurnitureHandler(Furniture furniture)
+{
+    // ... -&gt; do something with the fresh loaded furniture like furniture.prefab.AddComponent&lt;T&gt;()
+
+    return furniture;
+}
+</code></pre>
+<p>In order to make the <code>FurnitureHandler</code> work, you need to register it:</p>
+<pre><code class="lang-cs">using Lavender;
+
+// Put this in your mod Awake() function
+Lavender.AddFurnitureHandlers(typeof(the_class_containing_the_FurnitureHandler));
+Lavender.AddFurnitureShopRestockHandlers(typeof(the_class_containing_the_FurnitureShopRestockHandler));
+</code></pre>
+<br>
+<h2 id="constructors">Constructors</h2>
+<table>
+<tr>
+    <td>FurnitureHandler(string)</td>
+    <td>Initializes a new instance of the FurnitureHandlerAttribute class</td>
+</tr>
+</table>
+<br>
+<h2 id="properties">Properties</h2>
+<table>
+<tr>
+    <td>FurnitureTitle</td>
+    <td>The furniture title defines the lavender furniture the handler is applied to!</td>
+</tr>
+</table>
+<br>
+<hr>
+<h1 id="furnitureshoprestockhandlerattribute">FurnitureShopRestockHandlerAttribute</h1>
+<p>The Furniture Shop Restock Handler Attribute allows you to add your furniture every time a restock event occurs!</p>
+<br>
+<h2 id="example-1">Example</h2>
+<pre><code class="lang-cs">using Lavender.FurnitureLib;
+
+[FurnitureShopRestockHandlerAttribute(&quot;AnyID&quot;)]
+public static List&lt;BuildingSystem.FurnitureInfo&gt; FurShopRestockHandler(FurnitureShopName name)
+{
+    List&lt;BuildingSystem.FurnitureInfo&gt; restock = new List&lt;BuildingSystem.FurnitureInfo&gt;();
+
+    string path = &quot;FurnitureConfig.json&quot;;
+    
+    // Idea: Randomize the restock amount to make it more realistic
+    int amount = 20;
+   
+    BuildingSystem.FurnitureInfo? info = FurnitureCreator.CreateShopFurniture(path, amount);
+    if(info != null) restock.Add(info);
+
+    return restock;
+}
+</code></pre>
+<p>In order to make the <code>FurnitureShopRestockHandler</code> work, you need to register it:</p>
+<pre><code class="lang-cs">using Lavender;
+
+// Put this in your mod Awake() function
+Lavender.AddFurnitureShopRestockHandlers(typeof(the_class_containing_the_FurnitureShopRestockHandler));
+</code></pre>
+<br>
+<h2 id="constructors-1">Constructors</h2>
+<table>
+<tr>
+    <td>FurnitureShopRestockHandler(string)</td>
+    <td>Initializes a new instance of the FurnitureShopRestockHandlerAttribute class.</td>
+</tr>
+</table>
+<br>
+<h2 id="properties-1">Properties</h2>
+<table>
+<tr>
+    <td>HandlerUID</td>
+    <td>A Unique ID needed incase you want to remove an handler after registering it.</td>
+</tr>
+</table>
+<br>
+<h2 id="furnitureshopname-enum">FurnitureShopName Enum</h2>
+<p>The FurnitureShopName Enum which is one of the parameters of the FurnitureShopRestockHandler function allows you to identify which furniture shop the restock event came from.</p>
+<br>
+<h3 id="values">Values</h3>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Values from the Furniture Shops which came with the Mines Update are currently (v2.1) missing and displayed as NONE!</p>
+</div>
+<table>
+<tr>
+    <td>None</td>
+    <td>If none of the other values fit, the enum will be set to ``FurnitureShopName.None``</td>
+</tr>
+<tr>
+    <td>OneStopShop</td>
+    <td>One Stop Shop</td>
+</tr>
+<tr>
+    <td>MoebelmannFurnitures</td>
+    <td>Möbelmann Furnitures</td>
+</tr>
+<tr>
+    <td>SamuelJonasson</td>
+    <td>Jonasson's Shop</td>
+</tr>
+</table>
+<br>
 
 </article>
 

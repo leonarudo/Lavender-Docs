@@ -16,10 +16,10 @@
     href: CommandLib/IConsoleCommand.md
 - name: FurnitureLib
   items:
-  - name: FurnitureAssetData
-    href: FurnitureLib/FurnitureAssetData.md
   - name: FurnitureConfig
     href: FurnitureLib/FurnitureConfig.md
+  - name: FurnitureAssetData
+    href: FurnitureLib/FurnitureAssetData.md
   - name: FurnitureCreator
     href: FurnitureLib/FurnitureCreator.md
   - name: HandlerAttributes
