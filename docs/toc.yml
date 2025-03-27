@@ -24,3 +24,15 @@
     href: FurnitureLib/FurnitureCreator.md
   - name: HandlerAttributes
     href: FurnitureLib/HandlerAttributes.md
+- name: ItemLib & RecipeLib
+  items:
+  - name: Items
+    href: Item-n-Recipe/Items.md
+  - name: Recipes
+    href: Item-n-Recipe/Recipes.md
+- name: RuntimeImporter
+  items:
+  - name: FastObjImporter
+    href: RuntimeImporter/FastObjImporter.md
+  - name: ImageLoader
+    href: RuntimeImporter/ImageLoader.md

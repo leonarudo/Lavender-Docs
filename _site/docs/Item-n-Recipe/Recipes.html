@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Recipes | Lavender Docs </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Recipes | Lavender Docs ">
+      
+      
+      <link rel="icon" href="../../favicon.ico">
+      <link rel="stylesheet" href="../../public/docfx.min.css">
+      <link rel="stylesheet" href="../../public/main.css">
+      <meta name="docfx:navrel" content="../../toc.html">
+      <meta name="docfx:tocrel" content="../toc.html">
+      
+      <meta name="docfx:rel" content="../../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/leonarudo/Lavender-Docs/blob/main/docs/Item-n-Recipe/Recipes.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../../index.html">
+            <img id="logo" class="svg" src="../../logo.svg" alt="Lavender">
+            Lavender
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+<h1 id="recipes">Recipes</h1>
+
+<div class="NOTE">
+<h5>Note</h5>
+<p>Item and Recipes are identified via integer values. This, unfortunately, means that conflicts between mods are possible if we (as a community)
+do not communicate and document which mod(ders) use which ID regions.</p>
+<p>See current ID Allocations <a href="https://stalburg.net/index.php?title=Obenseuer/Modding#ID_Allocations">here</a>
+<br></p>
+</div>
+<h1 id="recipesjson">Recipes.json</h1>
+<br>
+<h1 id="example">Example</h1>
+<p><em>recipes.json from <code>norbby42 (Quackers)</code> <a href="https://github.com/norbby42/SmugglersPack/">Smuggler's Pack Mod</a></em></p>
+<pre><code class="lang-json">[
+  {
+    &quot;ID&quot;: 400001,
+    &quot;Name&quot;: &quot;Smuggler's Pack Insert&quot;,
+    &quot;Type&quot;: &quot;Sewing&quot;,
+    &quot;useOnlyStolenItems&quot;: false,
+    &quot;allowedNonStolenItemsIds&quot;: [],
+    &quot;keepItemOwnerOnFail&quot;: false,
+    &quot;disableJunkSpawn&quot;: false,
+    &quot;Appearance&quot;: {
+      &quot;SpritePath&quot;: &quot;&quot;,
+      &quot;CraftShowModel&quot;: true,
+      &quot;itemToShow&quot;: {
+        &quot;ID&quot;: 400001,
+        &quot;name&quot;: &quot;Smuggler's Pack Insert'&quot;,
+        &quot;itemnamespace&quot;: null
+      }
+    },
+    &quot;RecipeRequired&quot;: false,
+    &quot;RequiredConditions&quot;: [],
+    &quot;ExcludingConditions&quot;: [],
+    &quot;RecipeTags&quot;: [
+      &quot;Open Sewer Magazine&quot;
+    ],
+    &quot;variantItemCategory&quot;: &quot;None&quot;,
+    &quot;variantItemAmount&quot;: 0,
+    &quot;input&quot;: [
+      {
+        &quot;Key&quot;: {
+          &quot;ID&quot;: 14930,
+          &quot;Title&quot;: &quot;Empty Backpack&quot;,
+          &quot;itemnamespace&quot;: null
+        },
+        &quot;Value&quot;: 1.0
+      },
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Cloth Roll&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 12700
+        },
+        &quot;Value&quot;: 1.0
+      },
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Thread&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 15750
+        },
+        &quot;Value&quot;: 4.0
+      },
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Scrap Metal&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 35180
+        },
+        &quot;Value&quot;: 2.0
+      }
+    ],
+    &quot;output&quot;: [
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Smuggler's Pack Insert&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 400001
+        },
+        &quot;Value&quot;: 1.0
+      },
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Cloth Scraps&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 12680
+        },
+        &quot;Value&quot;: 1.0
+      }
+    ],
+    &quot;outputFail&quot;: [
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Cloth Scraps&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 12680
+        },
+        &quot;Value&quot;: 2.0
+      },
+      {
+        &quot;Key&quot;: {
+          &quot;name&quot;: &quot;Scrap Metal&quot;,
+          &quot;itemnamespace&quot;: null,
+          &quot;ID&quot;: 35180
+        },
+        &quot;Value&quot;: 1.0
+      }
+    ],
+    &quot;metaSettings&quot;: {
+      &quot;setIntegrity&quot;: 1.0,
+      &quot;setIntegrityFail&quot;: 0.5,
+      &quot;useAmmoAsInput&quot;: true,
+      &quot;setAmmoOfMax&quot;: 1.0,
+      &quot;setAmmoOfMaxFail&quot;: 0.0,
+      &quot;useLiquidContainers&quot;: false,
+      &quot;returnLiquidContainers&quot;: true,
+      &quot;putLiquidsIntoContainer&quot;: {
+        &quot;name&quot;: &quot;&quot;,
+        &quot;itemnamespace&quot;: null,
+        &quot;ID&quot;: 0
+      },
+      &quot;qualityFactor&quot;: 1.0,
+      &quot;qualityFactorFail&quot;: 0.5,
+      &quot;useFixedQuality&quot;: false,
+      &quot;fixedQuality&quot;: 1.0,
+      &quot;mailName&quot;: &quot;&quot;,
+      &quot;mailReceiver&quot;: {
+        &quot;name&quot;: &quot;&quot;,
+        &quot;ID&quot;: -1
+      }
+    },
+    &quot;FailChance&quot;: 0.85,
+    &quot;RelevantSkill&quot;: &quot;Sewing&quot;,
+    &quot;SkillFactor&quot;: 1.0,
+    &quot;ProcessTime&quot;: 500,
+    &quot;Meta&quot;: null
+  }
+]
+</code></pre>
+<p>In order to add Recipes through your own Recipes.json you need to register it to Lavender.</p>
+<pre><code class="lang-cs">string recipesPath = &quot;Recipes.json&quot;;
+Lavender.AddCustomRecipesFromJson(recipesPath, LCMPluginInfo.PLUGIN_NAME);
+</code></pre>
+<br>
+<h2 id="keys">Keys</h2>
+<p>I won't explain any keys here for now, because I didn't work that much with Recipes yet.<br>
+Please refer to Obenseurs Recipes.json.</p>
+<table>
+<tr>
+    <td>Appearance</td>
+    <td></td>
+</tr>
+<tr>
+    <td>SpritePath</td>
+    <td>The path to place where the Item UI Image is stored. InGame Addressable, AssetBundle or local file path.</td>
+</tr>
+</table>
+<p>For the <code>SpritePath</code> Asset Import Options, see <a href="Items.html#appearance">Appearance</a>.</p>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/leonarudo/Lavender-Docs/blob/main/docs/Item-n-Recipe/Recipes.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

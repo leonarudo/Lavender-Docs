@@ -95,6 +95,46 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/Item-n-Recipe/Items.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Item-n-Recipe/Items.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Item-n-Recipe/Recipes.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Item-n-Recipe/Recipes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/RuntimeImporter/FastObjImporter.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/RuntimeImporter/FastObjImporter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/RuntimeImporter/ImageLoader.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/RuntimeImporter/ImageLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/getting-started.md",
       "output": {
         ".html": {
