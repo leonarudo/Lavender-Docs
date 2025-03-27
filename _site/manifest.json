@@ -12,29 +12,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "api/lavender.md",
-      "output": {
-        ".html": {
-          "relative_path": "api/lavender.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "api/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/toc.html"
-        },
-        ".json": {
-          "relative_path": "api/toc.json"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/CommandLib/CommandManager.md",
       "output": {
         ".html": {

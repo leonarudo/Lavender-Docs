@@ -1,9 +1,4 @@
 {
-  "api/lavender.html": {
-    "href": "api/lavender.html",
-    "title": "Lavender | Lavender Docs",
-    "summary": "Lavender"
-  },
   "docs/CommandLib/CommandManager.html": {
     "href": "docs/CommandLib/CommandManager.html",
     "title": "CommandManager Static Class | Lavender Docs",
