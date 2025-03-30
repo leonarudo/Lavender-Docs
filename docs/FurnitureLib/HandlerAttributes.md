@@ -5,12 +5,12 @@ Source: [HandlerAttributes.cs](https://github.com/leonarudo/Lavender/blob/main/L
 
 <br>
 
-# FurnitureHandlerAttribute
+# FurniturePrefabHandlerAttribute
 
-The Furniture Handler Attribute allows you to add custom scripts to your furniture prefab!
+The Furniture Prefab Handler Attribute allows you to add custom scripts to your furniture prefab!
 
-The Handler will always be called every time your furniture gets loaded in ``SavableScriptableObject.LoadFromPath()``.
-Scripts added to your prefabs directly in the furniture creation or AssetBundle are likely causing errors, so always add your scripts using this handler!
+The Handler will always be called every time your furniture gets newly loaded for the FurnitureDatabase. (at the beginning of every scene containing your furniture)<br>
+Scripts added to your prefabs directly in the AssetBundle are likely causing errors, so always add your scripts using this handler!
 
 <br>
 
@@ -20,22 +20,21 @@ Scripts added to your prefabs directly in the furniture creation or AssetBundle 
 using Lavender.FurnitureLib;
 
 // This Handler function gets called every time your furniture gets loaded!
-[FurnitureHandler("YourFurnitureTitle")]
-public static Furniture YourFurnitureHandler(Furniture furniture)
+[FurniturePrefabHandler("YourFurnitureTitle")]
+public static GameObject YourFurniturePrefabHandler(GameObject gameobject)
 {
-    // ... -> do something with the fresh loaded furniture like furniture.prefab.AddComponent<T>()
+    // ... -> do something with the furniture prefab, like prefab.AddComponent<T>()
 
-    return furniture;
+    return gameobject;
 }
 ```
 
-In order to make the ``FurnitureHandler`` work, you need to register it:
+In order to make the ``FurniturePrefabHandler`` work, you need to register it:
 ```cs
 using Lavender;
 
 // Put this in your mod Awake() function
-Lavender.AddFurnitureHandlers(typeof(the_class_containing_the_FurnitureHandler));
-Lavender.AddFurnitureShopRestockHandlers(typeof(the_class_containing_the_FurnitureShopRestockHandler));
+Lavender.AddFurniturePrefabHandlers(typeof(the_class_containing_the_FurnitureHandler));
 ```
 
 <br>
@@ -44,8 +43,8 @@ Lavender.AddFurnitureShopRestockHandlers(typeof(the_class_containing_the_Furnitu
 
 <table>
 <tr>
-    <td>FurnitureHandler(string)</td>
-    <td>Initializes a new instance of the FurnitureHandlerAttribute class</td>
+    <td>FurniturePrefabHandler(string)</td>
+    <td>Initializes a new instance of the FurniturePrefabHandlerAttribute class</td>
 </tr>
 </table>
 
@@ -56,7 +55,7 @@ Lavender.AddFurnitureShopRestockHandlers(typeof(the_class_containing_the_Furnitu
 <table>
 <tr>
     <td>FurnitureTitle</td>
-    <td>The furniture title defines the lavender furniture the handler is applied to!</td>
+    <td>The furniture title defines the furniture the handler is applied to! (Lavender only!)</td>
 </tr>
 </table>
 
@@ -130,9 +129,6 @@ The FurnitureShopName Enum which is one of the parameters of the FurnitureShopRe
 
 ### Values
 
-> [!WARNING]
-> Values from the Furniture Shops which came with the Mines Update are currently (v2.1) missing and displayed as NONE!
-
 <table>
 <tr>
     <td>None</td>
@@ -149,6 +145,10 @@ The FurnitureShopName Enum which is one of the parameters of the FurnitureShopRe
 <tr>
     <td>SamuelJonasson</td>
     <td>Jonasson's Shop</td>
+</tr>
+<tr>
+    <td>OSMiningServices</td>
+    <td>OS Mining Services</td>
 </tr>
 </table>
 

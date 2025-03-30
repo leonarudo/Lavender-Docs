@@ -39,7 +39,7 @@ Lavenders "Main" Class, you will use it pretty often.
     <td>Provides the current Lavender instance</td>
 </tr>
 <tr>
-    <td>createdFurniture</td>
+    <td>FurnitureDatabase</td>
     <td>A list of all modded furniture's using Lavender.</td>
 </tr>
 <tr>
@@ -50,19 +50,31 @@ Lavenders "Main" Class, you will use it pretty often.
     <td>customRecipeDatabase</td>
     <td>A list of all modded Recipes using Lavender.</td>
 </tr>
+<tr>
+    <td>customStorageCategoryDatabase</td>
+    <td>A list of all modded StorageCategories using Lavender.</td>
+</tr>
+<tr>
+    <td>customStorageSpawnCategoryDatabase</td>
+    <td>A list of all modded StorageSpawnCategories using Lavender.</td>
+</tr>
 </table>
 
 <br>
 
-## Methods
+## Static Methods
 <table>
 <tr>
-    <td>GetFurnitureByTitel(string)</td>
+    <td>FetchFurnitureByTitle(string)</td>
     <td></td>
 </tr>
 <tr>
-    <td>AddFurnitureHandlers(Type)</td>
-    <td>Gets all FurnitureHandler methods defined in the given Type: type and registers them for the Handler callback</td>
+    <td>FetchFurnitureByID(string)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddFurniturePrefabHandlers(Type)</td>
+    <td>Gets all FurniturePrefabHandler methods defined in the given Type: type and registers them for the Handler callback</td>
 </tr>
 <tr>
     <td>AddFurnitureShopRestockHandlers(Type)</td>
@@ -82,6 +94,22 @@ Lavenders "Main" Class, you will use it pretty often.
 </tr>
 <tr>
     <td>AddCustomRecipesFromJson(string, string)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddCustomStorageCategory(StorageCategory)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddCustomStorageCategoryFromJson(string, string)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddCustomStorageSpawnCategory(StorageSpawnCategory)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddCustomStorageSpawnCategoryFromJson(string, string)</td>
     <td></td>
 </tr>
 </table>

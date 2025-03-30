@@ -24,6 +24,14 @@
     href: FurnitureLib/FurnitureCreator.md
   - name: HandlerAttributes
     href: FurnitureLib/HandlerAttributes.md
+- name: StorageLib
+  items:
+  - name: StorageCreator
+    href: StorageLib/StorageCreator.md
+  - name: StorageCategory
+    href: StorageLib/StorageCategory.md
+  - name: StorageSpawnCategory
+    href: StorageLib/StorageSpawnCategory.md
 - name: ItemLib & RecipeLib
   items:
   - name: Items

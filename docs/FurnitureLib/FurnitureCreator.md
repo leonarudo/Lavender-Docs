@@ -26,8 +26,8 @@ If you just want to create some furniture's stick to ``Create(...)`` and ``Creat
     <td>Uses a FurnitureConfig to create a Furniture</td>
 </tr>
 <tr>
-    <td>Create(string)</td>
-    <td>Creates a Furniture from the given path to the FurnitureConfig json and adds it to the 'createdFurniture' list</td>
+    <td>Create(string, bool = false)</td>
+    <td>Creates a Furniture from the given path to the FurnitureConfig json and adds it to the FurnitureDatabase</td>
 </tr>
 <tr>
     <td>CreateShopFurniture(string, int)</td>
