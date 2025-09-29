@@ -240,10 +240,20 @@ Please refer to Obenseurs Recipes.json.</p>
 </tr>
 <tr>
     <td>SpritePath</td>
-    <td>The path to place where the Item UI Image is stored. InGame Addressable, AssetBundle or local file path.</td>
+    <td>The path to place where the Item UI Image is stored. InGame Addressable or LavenderAsset.</td>
 </tr>
 </table>
-<p>For the <code>SpritePath</code> Asset Import Options, see <a href="Items.html#appearance">Appearance</a>.</p>
+<br>
+<h2 id="appearance">Appearance</h2>
+<div class="WARNING">
+<h5>Warning</h5>
+<p>Lavender supports loading images and obj's at runtime, but the obj importer is currently pretty buggy. For the best and more stable results use AssetBundle imports instead!</p>
+</div>
+<p>Lavender allows you to use two ways to define the Recipe appearance:</p>
+<ol>
+<li><strong>LavenderAssets:</strong> Use <code>#lv_&lt;YourModName&gt;-&lt;ID&gt;</code> e.g. <code>#lv_SupperDuperMod-42</code> -&gt; Learn more <a href="../RuntimeImporter/LavenderAsset.html">here</a></li>
+<li><strong>Addressables:</strong> Because this Recipes.json is treated just like Obenseuer's Recipes.json you can also point to Obensuer's Game Assets: The Addressables</li>
+</ol>
 
 </article>
 

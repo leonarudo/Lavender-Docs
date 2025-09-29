@@ -107,38 +107,13 @@ Obenseuers Item.json file how to add Items!</p>
 	    &quot;CategoryName&quot;
 	],
 	&quot;Value&quot;: 1,
-	&quot;Description&quot;: &quot;Modded Item using AssetBundles&quot;,
+	&quot;Description&quot;: &quot;Modded Item&quot;,
 	&quot;Stackable&quot;: 99,
 	&quot;Appearance&quot;: {
 		&quot;Material&quot;: &quot;&quot;,
-		&quot;SpritePath&quot;: &quot;AssetBundleFileName#AB&lt;AssetBundle-ImageName&gt;&quot;,
+		&quot;SpritePath&quot;: &quot;#lv_ExampleItemMod-001&quot;,
 		&quot;ColorValue&quot;: &quot;&quot;,
-		&quot;PrefabPath&quot;: &quot;AssetBundleFileName#AB&lt;AssetBundle-PrefabName&gt;&quot;,
-		&quot;PrefabPathMany&quot;: &quot;&quot;
-	},
-	&quot;Actions&quot;: [],
-	&quot;Attachments&quot;: {
-		&quot;Name&quot;: &quot;&quot;,
-		&quot;Attachment1&quot;: &quot;none&quot;,
-		&quot;Attachment2&quot;: &quot;none&quot;
-	},
-	&quot;Meta&quot;: []
-    },
-    {
-	&quot;ID&quot;: 102,
-	&quot;Title&quot;: &quot;Item Name 2&quot;,
-	&quot;Categories&quot;: [
-            &quot;CategoryName&quot;,
-            &quot;AnotherCategory&quot;
-	],
-	&quot;Value&quot;: 1,
-	&quot;Description&quot;: &quot;Modded Item using Runtime Imports&quot;,
-	&quot;Stackable&quot;: 99,
-	&quot;Appearance&quot;: {
-		&quot;Material&quot;: &quot;&quot;,
-		&quot;SpritePath&quot;: &quot;item-img.png&quot;,
-		&quot;ColorValue&quot;: &quot;&quot;,
-		&quot;PrefabPath&quot;: &quot;item-object.obj&quot;,
+		&quot;PrefabPath&quot;: &quot;#lv_ExampleItemMod-101&quot;,
 		&quot;PrefabPathMany&quot;: &quot;&quot;
 	},
 	&quot;Actions&quot;: [],
@@ -184,7 +159,7 @@ Lavender.AddCustomItemsFromJson(itemsPath, LCMPluginInfo.PLUGIN_NAME);
 </tr>
 <tr>
     <td>Stackable</td>
-    <td>The max stack size of this item. e.g. 64 :)</td>
+    <td>The max stack size of this item. e.g. 64 ;D</td>
 </tr>
 <tr>
     <td>Appearance</td>
@@ -196,7 +171,7 @@ Lavender.AddCustomItemsFromJson(itemsPath, LCMPluginInfo.PLUGIN_NAME);
 </tr>
 <tr>
     <td>SpritePath</td>
-    <td>The path to place where the Item UI Image is stored. InGame Addressable, AssetBundle or local file path.</td>
+    <td>The path to place where the Item UI Image is stored. InGame Addressable or LavenderAsset.</td>
 </tr>
 <tr>
     <td>ColorValue</td>
@@ -204,7 +179,7 @@ Lavender.AddCustomItemsFromJson(itemsPath, LCMPluginInfo.PLUGIN_NAME);
 </tr>
 <tr>
     <td>PrefabPath</td>
-    <td>The path to place where the Item Prefab (InGame Object when dropped) is stored. InGame Addressable, AssetBundle or local file path.</td>
+    <td>The path to place where the Item Prefab (InGame Object when dropped) is stored. InGame Addressable or LavenderAsset.</td>
 </tr>
 <tr>
     <td>PrefabPathMany</td>
@@ -229,27 +204,11 @@ Lavender.AddCustomItemsFromJson(itemsPath, LCMPluginInfo.PLUGIN_NAME);
 <h5>Warning</h5>
 <p>Lavender supports loading images and obj's at runtime, but the obj importer is currently pretty buggy. For the best and more stable results use AssetBundle imports instead!</p>
 </div>
-<p>Lavender allows you to use three ways to define the Items appearance:</p>
-<h3 id="1-assetbundles">1. AssetBundles</h3>
-<p>AssetBundles are the recommended way to define the Item appearance.
-In order to import an asset (Image/3D-Model/etc.) simply add the following value to an key:</p>
-<pre><code class="lang-json">&quot;key&quot;: &quot;AssetBundlePath#AB&lt;Bundle-Object&gt;&quot;
-</code></pre>
-<ul>
-<li>Replace <code>AssetBundlePath</code> with the path to your AssetBundle file relative to your Mod.dll path.</li>
-<li>Replace <code>Bundle-Object</code> with the bundle path to your object.</li>
-</ul>
-<p>So if your AssetBundle file has the name <code>McMushroom</code> and is in or will be placed in the same directory of your Mod.dll and in the root directory
-of your AssetBundle there is the Image <code>ShroomBurgerIMG</code> the key-value-pair would look like this:</p>
-<pre><code class="lang-json">&quot;key&quot;: &quot;McMushroom#AB&lt;ShroomBurgerIMG&gt;&quot;
-</code></pre>
-<h3 id="2-runtime-imports">2. Runtime Imports</h3>
-<p>For runtime imports simply enter the relative file path to your Asset as an value.
-For Example, if you have an PNG Image named <code>McMushroom.png</code> in the same directory as your Mod.dll enter:</p>
-<pre><code class="lang-json">&quot;key&quot;: &quot;McMushroom.png&quot;
-</code></pre>
-<h3 id="3-addressables">3. Addressables</h3>
-<p>Last but not least you can still point to Obenseuer's Addressables just like the game does it in its Item.json.</p>
+<p>Lavender allows you to use two ways to define the Item appearance:</p>
+<ol>
+<li><strong>LavenderAssets:</strong> Use <code>#lv_&lt;YourModName&gt;-&lt;ID&gt;</code> e.g. <code>#lv_SupperDuperMod-42</code> -&gt; Learn more <a href="../RuntimeImporter/LavenderAsset.html">here</a></li>
+<li><strong>Addressables:</strong> Because this Items.json is treated just like Obenseuer's Item.json you can also point to Obensuer's Game Assets: The Addressables</li>
+</ol>
 
 </article>
 

@@ -13,30 +13,29 @@ Source: [FurnitureConfig.cs](https://github.com/leonarudo/Lavender/blob/main/Lav
 > Lavender supports loading images and obj's at runtime, but the obj importer is currently pretty buggy. For the best and more stable results use AssetBundle imports instead!
 
 > [!NOTE]
->  If you are using an FurnitureAssetData.json instead of an AssetBundle, set the values for ``imageName``, ``prefabName`` and ``previewPrefabName`` to ``""``!
+>  ``imageName``, ``prefabName`` and ``previewPrefabName`` only accept LavenderAssets!
 
 ### FurnitureConfig.json
 ```json
 {
     "id": 0,
-	"title": "Name",
-	"details":"Description",
+    "title": "Name",
+    "details":"Description",
 
-	"priceOC": 0,
-	"priceRM": 0,
+    "priceOC": 0,
+    "priceRM": 0,
 
-	"assetBundlePath": "assetBundle",
-	"imageName":"asset_img",
-	"prefabName":"asset_pre",
-	"previewPrefabName":"asset_prepre",
+    "imageName":"#lv_modname-001",
+    "prefabName":"#lv_modname-101",
+    "previewPrefabName":"#lv_modname-101",
 	
-	"category": "ALL",
-	"restrictedAreas": [
-	],
+    "category": "ALL",
+    "restrictedAreas": [
+    ],
 	
-	"displayStyle": "Default",
+    "displayStyle": "Default",
     "placeType": "all",
-	"displayRotationY": 0
+    "displayRotationY": 0
 }
 ```
 
@@ -66,21 +65,16 @@ Source: [FurnitureConfig.cs](https://github.com/leonarudo/Lavender/blob/main/Lav
     <td>RM price</td>
 </tr>
 <tr>
-    <td>assetBundlePath</td>
-    <td>The location of the AssetBundle, which contains the image,prefab and preview prefab, relative to the .json path
-    <br>Or the location of the FurnitureAssetData .json</td>
-</tr>
-<tr>
     <td>imageName</td>
-    <td>The name of the sprite in the AssetBundle defined at assetBundlePath</td>
+    <td>LavenderAsset-ID 'ModName-id' e.g. Lavender-100</td>
 </tr>
 <tr>
     <td>prefabName</td>
-    <td>The name of the GameObject/Prefab in the AssetBundle defined at assetBundlePath</td>
+    <td>LavenderAsset-ID 'ModName-id' e.g. Lavender-100</td>
 </tr>
 <tr>
     <td>previewPrefabName</td>
-    <td>The name of the GameObject/Prefab in the AssetBundle defined at assetBundlePath</td>
+    <td>LavenderAsset-ID 'ModName-id' e.g. Lavender-100</td>
 </tr>
 <tr>
     <td>category</td>

@@ -65,6 +65,18 @@ Lavenders "Main" Class, you will use it pretty often.
 ## Static Methods
 <table>
 <tr>
+    <td>AddLavenderAssets(string, string)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>GetLavenderAsset(string)</td>
+    <td>Tries to find the LavenderAsset by its ID 'modname-id' or '#lv_modname-id'</td>
+</tr>
+<tr>
+    <td>GetLavenderAssetsFromMod(string)</td>
+    <td>Returns all LavenderAssets added using the given mod name.</td>
+</tr>
+<tr>
     <td>FetchFurnitureByTitle(string)</td>
     <td></td>
 </tr>
@@ -94,6 +106,14 @@ Lavenders "Main" Class, you will use it pretty often.
 </tr>
 <tr>
     <td>AddCustomRecipesFromJson(string, string)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddModifierToCraftingBase(string, int, bool = false)</td>
+    <td>Adds a Modifier using its ID to a crafting station</td>
+</tr>
+<tr>
+    <td>AddModifierInfo(ModifierInfo)</td>
     <td></td>
 </tr>
 <tr>

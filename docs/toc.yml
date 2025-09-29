@@ -14,16 +14,34 @@
     href: CommandLib/CommandManager.md
   - name: IConsoleCommand
     href: CommandLib/IConsoleCommand.md
+- name: DialogueLib
+  items:
+  - name: ConversationPatcher
+    href: DialogueLib/ConversationPatcher.md
 - name: FurnitureLib
   items:
   - name: FurnitureConfig
     href: FurnitureLib/FurnitureConfig.md
-  - name: FurnitureAssetData
-    href: FurnitureLib/FurnitureAssetData.md
   - name: FurnitureCreator
     href: FurnitureLib/FurnitureCreator.md
   - name: HandlerAttributes
     href: FurnitureLib/HandlerAttributes.md
+- name: ItemLib & RecipeLib
+  items:
+  - name: Items
+    href: Item-n-Recipe/Items.md
+  - name: Recipes
+    href: Item-n-Recipe/Recipes.md
+  - name: Modifier
+    href: Item-n-Recipe/ModifierInfo.md
+- name: RuntimeImporter
+  items:
+  - name: FastObjImporter
+    href: RuntimeImporter/FastObjImporter.md
+  - name: ImageLoader
+    href: RuntimeImporter/ImageLoader.md
+  - name: LavenderAsset
+    href: RuntimeImporter/LavenderAsset.md
 - name: StorageLib
   items:
   - name: StorageCreator
@@ -32,15 +50,3 @@
     href: StorageLib/StorageCategory.md
   - name: StorageSpawnCategory
     href: StorageLib/StorageSpawnCategory.md
-- name: ItemLib & RecipeLib
-  items:
-  - name: Items
-    href: Item-n-Recipe/Items.md
-  - name: Recipes
-    href: Item-n-Recipe/Recipes.md
-- name: RuntimeImporter
-  items:
-  - name: FastObjImporter
-    href: RuntimeImporter/FastObjImporter.md
-  - name: ImageLoader
-    href: RuntimeImporter/ImageLoader.md

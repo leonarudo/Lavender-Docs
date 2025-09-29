@@ -32,10 +32,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/FurnitureLib/FurnitureAssetData.md",
+      "source_relative_path": "docs/DialogueLib/ConversationPatcher.md",
       "output": {
         ".html": {
-          "relative_path": "docs/FurnitureLib/FurnitureAssetData.html"
+          "relative_path": "docs/DialogueLib/ConversationPatcher.html"
         }
       },
       "version": ""
@@ -82,6 +82,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/Item-n-Recipe/ModifierInfo.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Item-n-Recipe/ModifierInfo.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/Item-n-Recipe/Recipes.md",
       "output": {
         ".html": {
@@ -106,6 +116,16 @@
       "output": {
         ".html": {
           "relative_path": "docs/RuntimeImporter/ImageLoader.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/RuntimeImporter/LavenderAsset.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/RuntimeImporter/LavenderAsset.html"
         }
       },
       "version": ""

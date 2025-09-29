@@ -99,29 +99,28 @@ Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/Furnit
 </div>
 <div class="NOTE">
 <h5>Note</h5>
-<p>If you are using an FurnitureAssetData.json instead of an AssetBundle, set the values for <code>imageName</code>, <code>prefabName</code> and <code>previewPrefabName</code> to <code>&quot;&quot;</code>!</p>
+<p><code>imageName</code>, <code>prefabName</code> and <code>previewPrefabName</code> only accept LavenderAssets!</p>
 </div>
 <h3 id="furnitureconfigjson">FurnitureConfig.json</h3>
 <pre><code class="lang-json">{
     &quot;id&quot;: 0,
-	&quot;title&quot;: &quot;Name&quot;,
-	&quot;details&quot;:&quot;Description&quot;,
+    &quot;title&quot;: &quot;Name&quot;,
+    &quot;details&quot;:&quot;Description&quot;,
 
-	&quot;priceOC&quot;: 0,
-	&quot;priceRM&quot;: 0,
+    &quot;priceOC&quot;: 0,
+    &quot;priceRM&quot;: 0,
 
-	&quot;assetBundlePath&quot;: &quot;assetBundle&quot;,
-	&quot;imageName&quot;:&quot;asset_img&quot;,
-	&quot;prefabName&quot;:&quot;asset_pre&quot;,
-	&quot;previewPrefabName&quot;:&quot;asset_prepre&quot;,
+    &quot;imageName&quot;:&quot;#lv_modname-001&quot;,
+    &quot;prefabName&quot;:&quot;#lv_modname-101&quot;,
+    &quot;previewPrefabName&quot;:&quot;#lv_modname-101&quot;,
 	
-	&quot;category&quot;: &quot;ALL&quot;,
-	&quot;restrictedAreas&quot;: [
-	],
+    &quot;category&quot;: &quot;ALL&quot;,
+    &quot;restrictedAreas&quot;: [
+    ],
 	
-	&quot;displayStyle&quot;: &quot;Default&quot;,
+    &quot;displayStyle&quot;: &quot;Default&quot;,
     &quot;placeType&quot;: &quot;all&quot;,
-	&quot;displayRotationY&quot;: 0
+    &quot;displayRotationY&quot;: 0
 }
 </code></pre>
 <br>
@@ -148,21 +147,16 @@ Source: <a href="https://github.com/leonarudo/Lavender/blob/main/Lavender/Furnit
     <td>RM price</td>
 </tr>
 <tr>
-    <td>assetBundlePath</td>
-    <td>The location of the AssetBundle, which contains the image,prefab and preview prefab, relative to the .json path
-    <br>Or the location of the FurnitureAssetData .json</td>
-</tr>
-<tr>
     <td>imageName</td>
-    <td>The name of the sprite in the AssetBundle defined at assetBundlePath</td>
+    <td>LavenderAsset-ID 'ModName-id' e.g. Lavender-100</td>
 </tr>
 <tr>
     <td>prefabName</td>
-    <td>The name of the GameObject/Prefab in the AssetBundle defined at assetBundlePath</td>
+    <td>LavenderAsset-ID 'ModName-id' e.g. Lavender-100</td>
 </tr>
 <tr>
     <td>previewPrefabName</td>
-    <td>The name of the GameObject/Prefab in the AssetBundle defined at assetBundlePath</td>
+    <td>LavenderAsset-ID 'ModName-id' e.g. Lavender-100</td>
 </tr>
 <tr>
     <td>category</td>
