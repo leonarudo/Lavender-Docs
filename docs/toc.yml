@@ -3,7 +3,9 @@
 
 - name: Guides
 - name: Getting Started
-  href: getting-started.md
+  href: Guides/getting-started.md
+- name: Your First Mod
+  href: Guides/Your-First-Mod.md
 
 - name: API Reference
 - name: Lavender

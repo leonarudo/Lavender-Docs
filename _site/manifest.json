@@ -72,6 +72,26 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/Guides/Your-First-Mod.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Guides/Your-First-Mod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/Guides/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Guides/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/Item-n-Recipe/Items.md",
       "output": {
         ".html": {
@@ -162,16 +182,6 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
       "source_relative_path": "docs/lavender.md",
       "output": {
         ".html": {
@@ -189,6 +199,36 @@
         },
         ".json": {
           "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/first-mod-guide/browser_overview.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/first-mod-guide/browser_overview.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/first-mod-guide/hook_overview.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/first-mod-guide/hook_overview.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/first-mod-guide/log_output.jpg",
+      "output": {
+        "resource": {
+          "relative_path": "images/first-mod-guide/log_output.jpg"
         }
       },
       "version": ""
