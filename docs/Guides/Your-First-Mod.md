@@ -102,7 +102,7 @@ Feel free to click the edit button on your new hook but don't change anything ye
 
 Find something you can lockpick and break your pick. You should be able to see the log output if you click the button labelled `Log` on the UE top bar menu.
 
-<img src="images/first-mod-guide/log_output.jpg" width="100%" alt="An image of the log output of our hook" />
+<img src="../../images/first-mod-guide/log_output.jpg" width="100%" alt="An image of the log output of our hook" />
 
 Normally we'd want to do more than log, but for the purpose of an example we're satisfied with this hook. So now let's recreate it, but in a plugin!
 
