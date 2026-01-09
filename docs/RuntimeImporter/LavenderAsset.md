@@ -47,7 +47,7 @@ Source: [LavenderAsset.cs](https://github.com/leonarudo/Lavender/blob/main/Laven
 In order to use these LVAs in your ``FurnitureConfig.json`` or ``Item/Recipe.json`` you need to register them to Lavender:
 ```cs
 string path = "YourLavenderAsset.json";
-Lavender.AddLavenderAssets("YourModName", path);
+Lavender.AddLavenderAssets(path, "YourModName");
 
 // Now you can reference these LVAs as e.g. #lv_YourModName-1
 ```

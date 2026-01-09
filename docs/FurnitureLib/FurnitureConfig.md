@@ -25,6 +25,8 @@ Source: [FurnitureConfig.cs](https://github.com/leonarudo/Lavender/blob/main/Lav
     "priceOC": 0,
     "priceRM": 0,
 
+    "trash": false,
+
     "imageName":"#lv_modname-001",
     "prefabName":"#lv_modname-101",
     "previewPrefabName":"#lv_modname-101",
@@ -63,6 +65,10 @@ Source: [FurnitureConfig.cs](https://github.com/leonarudo/Lavender/blob/main/Lav
 <tr>
     <td>priceRM</td>
     <td>RM price</td>
+</tr>
+<tr>
+    <td>trash</td>
+    <td>?</td>
 </tr>
 <tr>
     <td>imageName</td>
@@ -134,6 +140,7 @@ Source: [FurnitureConfig.cs](https://github.com/leonarudo/Lavender/blob/main/Lav
 - LicensePlates
 - Kitchen
 - Tank
+- None
 
 <br>
 
@@ -151,6 +158,9 @@ Source: [FurnitureConfig.cs](https://github.com/leonarudo/Lavender/blob/main/Lav
 - Workshop
 - Outside
 - Greenhouse
+- Store
+- Communal
+- Public
 
 <br>
 

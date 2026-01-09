@@ -18,7 +18,7 @@ If you just want to create some furniture's stick to ``Create(...)`` and ``Creat
 
 <table>
 <tr>
-    <td>NewFurniture(string, string, Sprite, string, Furniture.Category, int, int, GameObject, GameObject, Furniture.BuildingArea[], List<Furniture.ReseourceItem>, FurniturePlaceType, Furniture.DisplayStyle, int)</td>
+    <td>NewFurniture(string, string, Sprite, string, Furniture.Category, int, int, GameObject, GameObject, Furniture.BuildingArea[], List<Furniture.ReseourceItem>, FurniturePlaceType, Furniture.DisplayStyle, int, bool)</td>
     <td>Creates an Furniture object and setups the prefab entity structure. *This function is for those who know what there doing!*</td>
 </tr>
 <tr>

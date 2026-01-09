@@ -7,9 +7,9 @@ Source: [HandlerAttributes.cs](https://github.com/leonarudo/Lavender/blob/main/L
 
 # FurniturePrefabHandlerAttribute
 
-The Furniture Prefab Handler Attribute allows you to add custom scripts to your furniture prefab!
+The Furniture Prefab Handler Attribute allows you to add custom scripts to your furniture prefab or to in-game furniture prefabs!
 
-The Handler will always be called every time your furniture gets newly loaded for the FurnitureDatabase. (at the beginning of every scene containing your furniture)<br>
+The Handler will always be called every time your or an in-game furniture gets newly loaded for the FurnitureDatabase. (at the beginning of every scene containing your furniture)<br>
 Scripts added to your prefabs directly in the AssetBundle are likely causing errors, so always add your scripts using this handler!
 
 <br>
@@ -27,6 +27,18 @@ public static GameObject YourFurniturePrefabHandler(GameObject gameobject)
 
     return gameobject;
 }
+
+/* Alternatively you can add custom scripts or edit in-game furniture
+ * by setting the bool isIngameFurniture = true and parsing
+ * the in-game furniture name to the handler attribute!
+*/
+[FurniturePrefabHandler("Laptop", true)]
+public static GameObject LaptopPrefabPatch(GameObject prefab)
+{
+    // ... -> do something with the Laptop Furniture prefab!
+
+    return prefab;
+}
 ```
 
 In order to make the ``FurniturePrefabHandler`` work, you need to register it:
@@ -43,7 +55,7 @@ Lavender.AddFurniturePrefabHandlers(typeof(the_class_containing_the_FurnitureHan
 
 <table>
 <tr>
-    <td>FurniturePrefabHandler(string)</td>
+    <td>FurniturePrefabHandler(string, bool)</td>
     <td>Initializes a new instance of the FurniturePrefabHandlerAttribute class</td>
 </tr>
 </table>
@@ -55,7 +67,11 @@ Lavender.AddFurniturePrefabHandlers(typeof(the_class_containing_the_FurnitureHan
 <table>
 <tr>
     <td>FurnitureTitle</td>
-    <td>The furniture title defines the furniture the handler is applied to! (Lavender only!)</td>
+    <td>The furniture title defines the furniture the handler is applied to!</td>
+</tr>
+<tr>
+    <td>isIngameFurniture</td>
+    <td>Is this furniture an in-game one? Default = false</td>
 </tr>
 </table>
 
