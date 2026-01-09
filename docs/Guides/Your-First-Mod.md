@@ -88,13 +88,13 @@ If you found it, great job! If you gave up, its the object called "[2] Player" t
 > [!TIP]
 > Hey, what's that `DeveloperMovement` component? What happens if you open it in the inspector and scroll down to the method `ActivateDebugMovement()` When you're done fooling around `DeactivateDebugMovement()` and continue to the next step.
 
-<img src="/images/first-mod-guide/browser_overview.jpg" width="100%" alt="An overview of the browser" />
+<img src="../../images/first-mod-guide/browser_overview.jpg" width="100%" alt="An overview of the browser" />
 
 The ECM Player object contains a child object named `Player` (yes we're going in circles, here) and that has a component named `CharacterScripts`. This component has a whole lot of goodies to play with but we're interested in the component `PlayerLockpicking` which handles all the of the lockpicking interactions. Open this component in the inspector and see if you can figure out what method we're about to target. If you're having trouble finding just methods use the tick-boxes at the top of the inspector to toggle off properties and fields.
 
 Notice the method named `BreakLockpick`. Let's check when it fires by making a hook in the game without needing to load a plugin. At the top of the screen click the `Hooks` button to open the `Hooks` menu.
 
-<img src="../images/first-mod-guide/hook_overview.jpg" width="100%" alt="An overview of the hook screen" />
+<img src="../../images/first-mod-guide/hook_overview.jpg" width="100%" alt="An overview of the hook screen" />
 
 Use the field labelled `Enter a class to add hooks to` to filter to "PlayerLockpicking" and then click "view methods". Filter to `BreakLockpick` and click the `Hook` button to generate a default postfix (runs after) hook for the method.
 
