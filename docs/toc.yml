@@ -4,6 +4,8 @@
 - name: Guides
 - name: Getting Started
   href: Guides/getting-started.md
+- name: Your First Data Mod
+  href: Guides/Your-First-Data-Mod.md
 - name: Your First Mod
   href: Guides/Your-First-Mod.md
 

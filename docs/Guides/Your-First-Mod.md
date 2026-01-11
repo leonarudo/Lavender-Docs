@@ -39,7 +39,7 @@ You can find the template and install instructions [here](https://github.com/Obe
 You can get the most maintained branch of Unity Explorer from [Yukieiji](https://github.com/yukieiji/UnityExplorer) as the original author, Sinai-Dev archived the original project several years ago.
 
 > [!TIP]
-Unity Explorer is possibly the most important tool in a Unity game modder's arsenal. Before continuing from this step, I suggest you simply click around in-game and explore the hierarchy browser, object inspector, free cam and C# REPL Console features of UE.
+> Unity Explorer is possibly the most important tool in a Unity game modder's arsenal. Before continuing from this step, I suggest you simply click around in-game and explore the hierarchy browser, object inspector, free cam and C# REPL Console features of UE.
 
 <br>
 

@@ -117,6 +117,14 @@ Lavenders "Main" Class, you will use it pretty often.
     <td></td>
 </tr>
 <tr>
+    <td>AddOnStorageEnterCallback(string, OnStorageEnter)</td>
+    <td></td>
+</tr>
+<tr>
+    <td>AddOnStorageExitCallback(string, OnStorageExit)</td>
+    <td></td>
+</tr>
+<tr>
     <td>AddCustomStorageCategory(StorageCategory)</td>
     <td></td>
 </tr>

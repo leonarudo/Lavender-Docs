@@ -72,6 +72,16 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "docs/Guides/Your-First-Data-Mod.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/Guides/Your-First-Data-Mod.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
       "source_relative_path": "docs/Guides/Your-First-Mod.md",
       "output": {
         ".html": {
@@ -229,6 +239,16 @@
       "output": {
         "resource": {
           "relative_path": "images/first-mod-guide/log_output.jpg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "images/getting-started-guide/browse-local-files.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/getting-started-guide/browse-local-files.png"
         }
       },
       "version": ""
