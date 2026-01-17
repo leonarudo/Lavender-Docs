@@ -22,6 +22,8 @@
   items:
   - name: ConversationPatcher
     href: DialogueLib/ConversationPatcher.md
+  - name: Extracting DialogueDatabase
+    href: DialogueLib/Extracting%20DialogueDatabase.md
 - name: FurnitureLib
   items:
   - name: FurnitureConfig
